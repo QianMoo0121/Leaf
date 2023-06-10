@@ -5,7 +5,7 @@ Subject: [PATCH] Bump Dependencies
 
 
 diff --git a/build.gradle.kts b/build.gradle.kts
-index a043849d4979255fac8d7fcdb925beb81f89983a..e6b4de522a47797899e977c7aff3c8e017b8cf89 100644
+index a043849d4979255fac8d7fcdb925beb81f89983a..7fab5b4d727bf884d60618fa3697dd5b2eb3192c 100644
 --- a/build.gradle.kts
 +++ b/build.gradle.kts
 @@ -16,7 +16,7 @@ dependencies {
@@ -33,12 +33,11 @@ index a043849d4979255fac8d7fcdb925beb81f89983a..e6b4de522a47797899e977c7aff3c8e0
 -    implementation("org.ow2.asm:asm:9.4")
 -    implementation("org.ow2.asm:asm-commons:9.4") // Paper - ASM event executor generation
 -    testImplementation("org.mockito:mockito-core:4.9.0") // Paper - switch to mockito
--    implementation("org.spongepowered:configurate-yaml:4.1.2") // Paper - config files
 +    implementation("org.apache.logging.log4j:log4j-iostreams:2.20.0") // Paper - remove exclusion
 +    implementation("org.ow2.asm:asm:9.5")
 +    implementation("org.ow2.asm:asm-commons:9.5") // Paper - ASM event executor generation
 +    testImplementation("org.mockito:mockito-core:5.3.1") // Paper - switch to mockito
-+    implementation("org.spongepowered:configurate-yaml:4.2.0-SNAPSHOT") // Paper - config files
+     implementation("org.spongepowered:configurate-yaml:4.1.2") // Paper - config files
 +    // Leaf end
      implementation("commons-lang:commons-lang:2.6")
 -    implementation("net.fabricmc:mapping-io:0.3.0") // Paper - needed to read mappings for stacktrace deobfuscation
